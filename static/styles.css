@@ -17,6 +17,17 @@ h1 {
     position: relative;
     z-index: 1; /* Ensure the content is above the overlay */
 }
+.banner-text {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold; */
+    animation: slide-in 1s ease forwards; /* Apply the animation */
+}
   .overlay {
     position: absolute;
     top: 0;
@@ -43,3 +54,17 @@ h1 {
     --bs-btn-disabled-bg: #fd2a0d;
     --bs-btn-disabled-border-color: #fd2a0d;
 }
+<<<<<<< HEAD
+=======
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+>>>>>>> 8d28eb5 (Just the motion)
