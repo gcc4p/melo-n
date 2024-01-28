@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <h1>Melo-n</h1>
+
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href=../static/styles.css>
     <title>Python Function Output</title>
 </head>
 <body>
-    <h1>Python Function Output:</h1>
-    <div id="functionOutput"></div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--For the songs dropdown--> 
+
+    <form type="submit">
+        <fieldset>
+          <legend>Choose a song!</legend>
+          <div class="mb-3">
+            <label for="GenreSelect" class="form-label">Genre</label>
+            <select id="GenreSelect" class="form-select">
+              <option>90's Rock</option>
+              <option>Pop</option>
+              <option>Hip-hop</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="SongSelect" class="form-label">Song</label>
+            <select id="SongSelect" class="form-select">
+              <option id="song1" value="1">Song 1</option>
+              <option id="song2" value="2">Song 2</option>
+              <option id="song3" value="3">Song 3</option>
+              <option id="song4" value="4">Song 4</option>
+              <option id="song5" value="5">Song 5</option>
+            </select>
+          </div>
+  
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+
     <script>
-        $(document).ready(function(){
-            $.get("/myfunction", function(data){
-                $("#functionOutput").text(data);
-            });
-        });
+        document.getElementById("song1").addEventListener("click", clickSong);
+
+        function clickSong(){
+            document.getElementById("audio1").addEventListener("click", clickSong);   
+        }
     </script>
+
+    <!--Mp3 players that pops out when songs are chosen-->
+    <div id="ogplayer">
+        <audio controls muted>
+            <source id="audio1" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" type="audio/mpeg"> <!--change songs-->
+            <source id="song2" src="" onclick="submitSong2()" type="audio/mpeg">
+            <source id="song3" src="" onclick="submitSong3()" type="audio/mpeg">
+            <source id="song4" src="" onclick="submitSong4()" type="audio/mpeg">
+            <source id="song5" src="" onclick="submitSong5()" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div id="remixplayer">
+        <audio controls muted>
+            <source id="RockSong1" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong1()"  type="audio/mpeg"> <!--Rock-->
+            <source id="RockSong2" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong2()" type="audio/mpeg">
+            <source id="RockSong3" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong3()" type="audio/mpeg">
+            <source id="RockSong4" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong4()" type="audio/mpeg">
+            <source id="RockSong5" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong5()"type="audio/mpeg">
+
+            <source id="PopSong1" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong1()"  type="audio/mpeg"> <!--Pop-->
+            <source id="PopSong2" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong2()" type="audio/mpeg">
+            <source id="PopSong3" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong3()" type="audio/mpeg">
+            <source id="PopSong4" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong4()" type="audio/mpeg">
+            <source id="PopSong5" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong5()"type="audio/mpeg">
+
+            <source id="HiphopSong1" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong1()"  type="audio/mpeg"> <!--Hip-hop-->
+            <source id="HiphopSong2" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong2()" type="audio/mpeg">
+            <source id="HiphopSong3" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong3()" type="audio/mpeg">
+            <source id="HiphopSong4" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong4()" type="audio/mpeg">
+            <source id="HiphopSong5" src="{{ url_for('static', filename='assets/audio_example.mp3') }}" onclick="submitRSong5()"type="audio/mpeg">
+        </audio>
+    </div>
+
 </body>
 </html>
