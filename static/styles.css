@@ -1,13 +1,45 @@
 /* Code to just try it out */
 h1 {
-    border: 2px #eee solid;
+    /* border: 2px #eee solid; */
     color: brown;
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    /* padding: 10px; */
 }
 .banner {
-    background-image: url('path_to_your_image.jpg');
+    padding: 0px;
+    background-image: url('assets/banner.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px; /* Adjust the height as needed */
+    width: 100%;
+    height: 1000px; /* Adjust the height as needed */
   }
+  .banner-content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the overlay */
+}
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by modifying the last value (0.5) */
+    z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #fd2a0d;
+    --bs-btn-border-color: #fd2a0d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #fd2a0d;
+    --bs-btn-hover-border-color: #fd2a0d;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #fd2a0d;
+    --bs-btn-active-border-color: #fd2a0d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #fd2a0d;
+    --bs-btn-disabled-border-color: #fd2a0d;
+}
