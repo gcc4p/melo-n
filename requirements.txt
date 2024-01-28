@@ -4,3 +4,5 @@ wheel
 audiocraft
 spleeter
 flask
+click
+audiocraft

@@ -2,7 +2,7 @@ import torchaudio
 from audiocraft.models import MusicGen
 from audiocraft.data.audio import audio_write
 
-model = MusicGen.get_pretrained('melody')
+model = MusicGen.get_pretrained('facebook/musicgen-melody')
 model.set_generation_params(duration=8)  # generate 8 seconds.
 
 descriptions = ['happy rock', 'energetic EDM', 'sad jazz']
