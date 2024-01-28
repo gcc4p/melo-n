@@ -1,8 +1,3 @@
-# melo-n
-
-**melo-n(ovate): An AI tool to change the genre of your favorite songs**
-
-_novate: To replace something with something new_
 # Melo-N
 
 Introducing Melo-N – where your favorite tunes get a whole new vibe! Melo-N combines "melody" and "Novate" to bring you a fun way to switch up your music.
