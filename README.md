@@ -9,8 +9,10 @@ What is Melo-N
 
 ## Installation
 
-run this command to clone this repository: git clone https://github.com/gcc4p/melo-n.git
-
+run this command to clone this repository:
+``
+git clone https://github.com/gcc4p/melo-n.git
+``
 ## Usage
 
 run these commands:
