@@ -34,6 +34,9 @@ function submitForm(event) {
                 case '4':
                     setSongDetails(genre, song, "../static/sounds/titanic.mp3", "../static/sounds/titanic-rock.wav");
                     break;
+                case '5':
+                    setSongDetails(genre, song, "../static/sounds/thankyou.mp3", "../static/sounds/thankyouV-rock.mp3");
+                    break;
             }
             break;
         case '2':
@@ -50,6 +53,9 @@ function submitForm(event) {
                 case '4':
                     setSongDetails(genre, song, "../static/sounds/titanic.mp3", "../static/sounds/titanic-pop.wav");
                     break;
+                case '5':
+                    setSongDetails(genre, song, "../static/sounds/thankyou.mp3", "../static/sounds/thankyouV-pop.mp3");
+                    break;
             }
             break;
         case '3':
@@ -65,6 +71,9 @@ function submitForm(event) {
                     break;
                 case '4':
                     setSongDetails(genre, song, "../static/sounds/titanic.mp3", "../static/sounds/titanic-hiphop.wav");
+                    break;
+                case '5':
+                    setSongDetails(genre, song, "../static/sounds/thankyou.mp3", "../static/sounds/thankyouV-hiphop.mp3");
                     break;
             }
             break;
