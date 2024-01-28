@@ -7,7 +7,8 @@ model.set_generation_params(duration=8)  # generate 8 seconds.
 
 descriptions = ['happy rock', 'energetic EDM', 'sad jazz']
 
-melody, sr = torchaudio.load('./assets/bach.mp3')
+melody, sr = torchaudio.load('./assets/Anlamazdin.mp3')
+print("helloWorld")
 # generates using the melody from the given audio and the provided descriptions.
 wav = model.generate_with_chroma(descriptions, melody[None].expand(3, -1, -1), sr)
 
