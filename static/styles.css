@@ -6,7 +6,7 @@ h1 {
     padding: 10px;
 }
 .banner {
-    background-image: url('path_to_your_image.jpg');
+    background-image: url('./assets/banner.jpg');
     background-size: cover;
     background-position: center;
     height: 300px; /* Adjust the height as needed */
