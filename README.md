@@ -5,7 +5,6 @@
 _novate: To replace something with something new_
 # Melo-N
 
-What is Melo-N?
 Introducing Melo-N – where your favorite tunes get a whole new vibe! Melo-N combines "melody" and "Novate" to bring you a fun way to switch up your music.
 
 Here's the deal: You pick a song and a genre, and we do the rest. We keep the lyrics and melody intact while changing up the music style. It's like listening to your favourite songs in a whole new light!
