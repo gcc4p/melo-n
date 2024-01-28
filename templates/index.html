@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="../static/assets/favicon2-removebg-preview.png" type="image/x-icon">
+        <title>Python Function Output</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../static/assets/favicon2-removebg-preview.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+          <div class="fade-in-container">
+            <div class="fade-in-element1">
+            <!-- Header-->
+            <header class="bg-dark py-5 banner">
+               
+                <div class="container px-5">
+                  <div class="overlay"></div>
+                    <div class="row justify-content-left banner-content">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start animate-text">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Melo-N <br> Novate Your Songs...</h1>
+                                <p class="lead fw-normal text-white mb-4">Transform your favorite tunes into an adventure with our tool!<br>
+                                    Simply pick a song, choose a genre, and watch as we remix it into a whole new groove 
+                                    while keeping the melody and lyrics intact. Get ready to dance to your favorite hits like never before!</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Try Now!</a>
+                                    <!-- <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="images/p4.jpg" alt="banner" /></div> -->
+                    </div>
+                </div>
+            </header>
+            </div>
+            <!-- Features section-->
+            <div class="fade-in-element2">
+            <div class="row" id="features">
+                <div class="col-md-6 px-0">
+                  <div class="img-box">
+                    <img src="../static/assets/999.jpg" class="box_img" alt="about img" style="width: auto; height: 900px;">
+                  </div>
+                </div>
+                <div class="col-md-5 mx-auto">
+                    <form type="submit" id="songForm" style="padding: 1rem; margin-top: 80px;">
+                        <fieldset>
+                          <legend>Choose a song!</legend>
+                          <div class="mb-3">
+                            <label for="GenreSelect" class="form-label">Genre</label>
+                            <select id="GenreSelect" class="form-select">
+                              <option value="1">90's Rock</option>
+                              <option value="2">Pop</option>
+                              <option value="3">Hip-hop</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="SongSelect" class="form-label">Song</label>
+                            <select id="SongSelect" class="form-select">
+                              <option id="song1" value="1">Anlamazdın (Ayla Dikmen)</option>
+                              <option id="song2" value="2">Vampire Song (Bach)</option>
+                              <option id="song3" value="3">Jojo theme</option>
+                              <option id="song4" value="4">Titanic (Celine Dion)</option>
+                              <option id="song5" value="5">Thank you (dido)</option>
+                            </select>
+                          </div>
+                  
+                          <button type="submit" class="btn btn-primary">Melo-N it!</button>
+                        </fieldset>
+                      </form>
+                      <div class="col-auto par" style="padding-left: 7rem;padding-top: 3rem;">
+                        <label class="form-label" > Original Song</label>
+                        <audio id="audioPlayer1" controls>
+                          <source id="originalSong" src="" type="audio/mpeg">
+                        </audio>
+                      </div>
+                      <div class="col-auto" style="padding-left: 7rem; padding-top: 3rem;">
+                        <label class="form-label"> Meloned Song</label>
+                        <audio id="audioPlayer2" controls>
+                          <source id="MelonedSong" src="" type="audio/mpeg">
+                        </audio>
+                      </div>
+                   
+                </div>
+            </div>
+          </div>
+        </div>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Melo-N 2024</div></div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- Core theme JS-->
+        <script src="../static/scripts.js"></script>
+    </body>
+</html>
