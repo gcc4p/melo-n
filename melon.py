@@ -1,12 +1,15 @@
-from flask import Flask, redirect, url_for, render_template
+from flask import Flask, render_template
 
-app = Flask(__name__, static_url_path='/static') 
+app = Flask(__name__)
 
 @app.route('/')
-def trial():
-    return render_template("index.html")
+def home():
+    return render_template('index.html')
 
+@app.route('/myfunction')
+def my_function():
+    result = "Hello, World!"  # Replace with your Python function's output
+    return result
 
-if __name__=="__main__":
-    app.debug = True
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
