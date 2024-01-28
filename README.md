@@ -8,7 +8,7 @@ _novate: To replace something with something new_
 What is Melo-N
 
 ## Installation
-
+run this command to clone the repository : git clone 
 ## Usage
 
 
