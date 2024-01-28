@@ -26,7 +26,7 @@ h1 {
     color: white;
     font-size: 24px;
     font-weight: bold; */
-    animation: slide-in 1s ease forwards; /* Apply the animation */
+    animation: moveText 5s infinite alternate;
 }
   .overlay {
     position: absolute;
@@ -54,13 +54,7 @@ h1 {
     --bs-btn-disabled-bg: #fd2a0d;
     --bs-btn-disabled-border-color: #fd2a0d;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 576c5d2 (Motion added)
-
-@keyframes slide-in {
+@keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
         opacity: 0;
@@ -70,7 +64,9 @@ h1 {
         opacity: 1;
     }
 }
-<<<<<<< HEAD
->>>>>>> 8d28eb5 (Just the motion)
-=======
->>>>>>> 576c5d2 (Motion added)
+
+.animate-text {
+    animation: slideInFromLeft 1s ease;
+}
+
+

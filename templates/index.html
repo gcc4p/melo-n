@@ -16,6 +16,8 @@
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
+          <div class="fade-in-container">
+            <div class="fade-in-element1">
             <!-- Header-->
             <header class="bg-dark py-5 banner">
                
@@ -23,7 +25,7 @@
                   <div class="overlay"></div>
                     <div class="row justify-content-left banner-content">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
+                            <div class="my-5 text-center text-xl-start animate-text">
                                 <h1 class="display-5 fw-bolder text-white mb-2">Melo-N <br> Novate Your Songs...</h1>
                                 <p class="lead fw-normal text-white mb-4">Transform your favorite tunes into an adventure with our tool!<br>
                                     Simply pick a song, choose a genre, and watch as we remix it into a whole new groove 
@@ -38,15 +40,17 @@
                     </div>
                 </div>
             </header>
+            </div>
             <!-- Features section-->
+            <div class="fade-in-element2">
             <div class="row" id="features">
                 <div class="col-md-6 px-0">
                   <div class="img-box">
-                    <img src="../static/assets/999.jpg" class="box_img" alt="about img" style="width: 100%; height: 100%;">
+                    <img src="../static/assets/999.jpg" class="box_img" alt="about img" style="width: auto; height: 900px;">
                   </div>
                 </div>
                 <div class="col-md-5 mx-auto">
-                    <form type="submit" id="songForm" style="padding:1rem;">
+                    <form type="submit" id="songForm" style="padding: 1rem; margin-top: 80px;">
                         <fieldset>
                           <legend>Choose a song!</legend>
                           <div class="mb-3">
@@ -60,24 +64,24 @@
                           <div class="mb-3">
                             <label for="SongSelect" class="form-label">Song</label>
                             <select id="SongSelect" class="form-select">
-                              <option id="song1" value="1">Song 1</option>
-                              <option id="song2" value="2">Song 2</option>
-                              <option id="song3" value="3">Song 3</option>
-                              <option id="song4" value="4">Song 4</option>
-                              <option id="song5" value="5">Song 5</option>
+                              <option id="song1" value="1">Anlamazdın (Ayla Dikmen)</option>
+                              <option id="song2" value="2">Vampire Song (Bach)</option>
+                              <option id="song3" value="3">Jojo theme</option>
+                              <option id="song4" value="4">Titanic (Celine Dion)</option>
+                              <option id="song5" value="5">Thank you (dido)</option>
                             </select>
                           </div>
                   
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-primary">Melo-N it!</button>
                         </fieldset>
                       </form>
-                      <div class="col-auto">
-                        <label class="form-label"> Original Song</label>
+                      <div class="col-auto par" style="padding-left: 7rem;padding-top: 3rem;">
+                        <label class="form-label" > Original Song</label>
                         <audio id="audioPlayer1" controls>
                           <source id="originalSong" src="" type="audio/mpeg">
                         </audio>
                       </div>
-                      <div class="col-auto">
+                      <div class="col-auto" style="padding-left: 7rem; padding-top: 3rem;">
                         <label class="form-label"> Meloned Song</label>
                         <audio id="audioPlayer2" controls>
                           <source id="MelonedSong" src="" type="audio/mpeg">
@@ -86,6 +90,8 @@
                    
                 </div>
             </div>
+          </div>
+        </div>
         </main>
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
