@@ -22,7 +22,7 @@ run these commands:
 ```
 pip install -r requirements.txt
 
-python melon.py
+python app.py
 ```
 
 ## Authors
