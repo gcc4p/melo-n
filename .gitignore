@@ -21,6 +21,7 @@ sdist/
 var/
 wheels/
 share/python-wheels/
+pretrained_models/2stems/
 *.egg-info/
 .installed.cfg
 *.egg
